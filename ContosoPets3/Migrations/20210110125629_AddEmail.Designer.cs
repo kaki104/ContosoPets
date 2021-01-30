@@ -3,14 +3,16 @@ using System;
 using ContosoPets3.Data;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 namespace ContosoPets3.Migrations
 {
     [DbContext(typeof(ContosoPetsContext))]
-    partial class ContosoPetsContextModelSnapshot : ModelSnapshot
+    [Migration("20210110125629_AddEmail")]
+    partial class AddEmail
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder

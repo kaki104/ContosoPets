@@ -1,21 +1,18 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
+﻿using ContosoPets3.Data;
+using ContosoPets3.Models;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
-using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
-using ContosoPets3.Data;
-using ContosoPets3.Models;
+using System.Linq;
+using System.Threading.Tasks;
 
 namespace ContosoPets3.Pages.Customers
 {
     public class EditModel : PageModel
     {
-        private readonly ContosoPets3.Data.ContosoPetsContext _context;
+        private readonly ContosoPetsContext _context;
 
-        public EditModel(ContosoPets3.Data.ContosoPetsContext context)
+        public EditModel(ContosoPetsContext context)
         {
             _context = context;
         }

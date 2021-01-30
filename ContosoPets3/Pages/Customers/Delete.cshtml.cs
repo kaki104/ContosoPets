@@ -1,20 +1,16 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
+﻿using ContosoPets3.Data;
+using ContosoPets3.Models;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
-using Microsoft.EntityFrameworkCore;
-using ContosoPets3.Data;
-using ContosoPets3.Models;
+using System.Threading.Tasks;
 
 namespace ContosoPets3.Pages.Customers
 {
     public class DeleteModel : PageModel
     {
-        private readonly ContosoPets3.Data.ContosoPetsContext _context;
+        private readonly ContosoPetsContext _context;
 
-        public DeleteModel(ContosoPets3.Data.ContosoPetsContext context)
+        public DeleteModel(ContosoPetsContext context)
         {
             _context = context;
         }
